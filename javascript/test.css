@@ -1,0 +1,56 @@
+/* Базовые стили для всего виджета */
+.demoTabs {
+    display: block;
+    background-color: #e0ddcf;
+    border: 2px solid #68523d;
+    color: #4a4440;
+}
+
+/* Внутренние отступы и граница для области содержимого */
+.demoTabs__content {
+    border-top: 2px solid #68523d;
+    padding: 16px;
+}
+
+/* Скрываем радиокнопки */
+.demoTabs__tab {
+    display: none;
+}
+
+/* По умолчанию область контента каждой конкретной вкладки скрыта */
+.demoTabs__area {
+    display: none;
+}
+
+/* Стили для параграфа внутри области контента */
+.demoTabs__area p {
+    margin-bottom: 16px;
+}
+
+/* Стилизация одной вкладки */
+.demoTabs__label {
+    display: inline-block;
+    font-weight: 700;
+    padding: 5px 10px;
+    margin: 0;
+    background-color: #8b6e5d;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Изменение цвета вкладки при наведении курсора */
+.demoTabs__label:hover {
+    background-color: #bcaaa4;
+}
+
+/* Меням цвет вкладки, если она выбрана */
+.demoTabs__tab:checked + .demoTabs__label {
+    background-color: #bcaaa4;
+}
+
+/* Если конкретная вкладка (радиокнопка) выбрана, то ищем соседний элемент с классом .demoTabs__content, в котором отображаем блок с data-атрибутом, соответствующим id активной вкладки */
+.demoTabs #demoTab-1:checked ~ .demoTabs__content .demoTabs__area[data-tab="demoTab-1"],
+.demoTabs #demoTab-2:checked ~ .demoTabs__content .demoTabs__area[data-tab="demoTab-2"],
+.demoTabs #demoTab-3:checked ~ .demoTabs__content .demoTabs__area[data-tab="demoTab-3"] {
+    display: block;
+}
