@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Заголовок документа</title>
+  <link rel="shortcut icon" href="icons8-ico-64.png">
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body style="background-color:#f8f7f7">
+  <h1 style="color: #1c98c9;">
+    Иконка W3docs
+  </h1>
+
+  <p>
+    Иконка W3docs добавлена в строку заголовка
+  </p>
+  <clock style="color: #c91c1c;"></clock>
+  <div style="color: #1c98c9;" id="clock">
+    Трям
+    <script>console.log('123');
+      let date = new Date();
+      //alert("Сейчас " + date);
+      function displayTime() {
+        let element = document.getElementById("clock"); // Найти элемент с id="clock" 
+        let now = new Date();    // Получить текущее время
+        element.innerHTML = now.toLocaleTimeString(); // Отобразить время
+        setTimeout(displayTime, 1000);    // Вызывать функцию каждую секунду
+      }
+      window.onload = displayTime; // Начать отображение времени после загрузки документа
+      function first() {
+        setTimeout(function () {
+          console.log(1);
+        }, 500);
+      }
+      function second() {
+        console.log(2);
+      }
+      first();
+      second();
+    </script>
+  </div>
+  <div class="demoTabs">
+    <input class="demoTabs__tab" type="radio" name="demoTab" id="demoTab-1" checked>
+    <label class="demoTabs__label" for="demoTab-1">Вкладка 1</label>
+    <input class="demoTabs__tab" type="radio" name="demoTab" id="demoTab-2">
+    <label class="demoTabs__label" for="demoTab-2">Вкладка 2</label>
+    <input class="demoTabs__tab" type="radio" name="demoTab" id="demoTab-3">
+    <label class="demoTabs__label" for="demoTab-3">Вкладка 3</label>
+
+    <div class="demoTabs__content">
+      <div class="demoTabs__area" data-tab="demoTab-1">
+        <p>Использование вкладок является популярным способом организации контента и улучшения пользовательского опыта
+          на сайтах и в приложениях. Вкладки позволяют пользователям быстро переключаться между различными разделами
+          контента без необходимости перезагрузки страницы или прокрутки длинного списка опций. Вкладки могут
+          использоваться для организации различных типов контента, таких как статьи, функции продуктов или настроек.</p>
+      </div>
+      <div class="demoTabs__area" data-tab="demoTab-2">
+        <p>Для проектирования вкладок существуют некоторые рекомендации. Вкладки должны быть ясно помечены и легко
+          понятны, с краткими и описательными заголовками. Активная вкладка должна отличаться визуально от неактивных
+          вкладок, чтобы помочь пользователям легко определить, какой раздел они в данный момент просматривают. Кроме
+          того, использование анимаций при наведении или щелчке может помочь обеспечить визуальную обратную связь и
+          улучшить общий пользовательский опыт.</p>
+      </div>
+      <div class="demoTabs__area" data-tab="demoTab-3">
+        <p>Существует несколько способов реализации вкладок на сайте или в приложении, таких как использование HTML и
+          CSS, JavaScript или сторонней библиотеки. Выбор способа реализации будет зависеть от конкретных потребностей и
+          требований проекта, а также от навыков разработчика. Важно выбирать способ реализации, который является
+          эффективным и доступным, и который хорошо работает на различных устройствах и в браузерах.</p>
+      </div>
+    </div>
+  </div>
+  <button style="background-color: #1c98c9;" style="color: #1cc925;" onclick="alert('Привет! Так JS тоже работает')" ;
+    onmouseover="alert('И это тоже работает')">Нажми на меня</button>
+</body>
+
+</html>
