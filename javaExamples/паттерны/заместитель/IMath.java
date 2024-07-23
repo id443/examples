@@ -1,4 +1,4 @@
-package заместитель;
+package паттерны.заместитель;
 
 public interface IMath {
 

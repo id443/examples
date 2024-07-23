@@ -1,4 +1,4 @@
-package декоратор;
+package паттерны.декоратор;
 
 class Main {
 	

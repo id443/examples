@@ -1,4 +1,4 @@
-package декоратор;
+package паттерны.декоратор;
 
 abstract class Decorator implements InterfaceComponent {
 	protected InterfaceComponent component;

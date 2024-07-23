@@ -1,4 +1,4 @@
-package стратегия;
+package паттерны.стратегия;
 
 class ConcreteStrategySubtract implements Strategy {
  

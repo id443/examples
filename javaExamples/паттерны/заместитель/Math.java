@@ -1,4 +1,4 @@
-package заместитель;
+package паттерны.заместитель;
 
 public class Math implements IMath {
 
