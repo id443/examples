@@ -1,11 +1,13 @@
 package поток;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Stream;
 
 /**
  * demoStream
@@ -22,6 +24,29 @@ public class demoStream {
         printSpecies1(seaCreatures);
         printSpecies2(seaCreatures);
 
+        List<String> list = Arrays.asList("one", "two", "three");
+        Stream<String> streamFromList = list.stream();
+
+        String[] array = { "one", "two", "three" };
+        Stream<String> streamFromArray = Arrays.stream(array);
+
+        List<String> list = Arrays.asList("one", "two", "three");
+        long count = list.stream().count();
+
+        final List<String> list2 = List.of("one", "two", "three");
+
+        list2.stream()
+                .filter(s -> {
+                    System.out.println("filter: " + s);
+                    return s.length() <= 3;
+                })
+                .map(s1 -> {
+                    System.out.println("map: " + s1);
+                    return s1.toUpperCase();
+                })
+                .forEach(x -> {
+                    System.out.println("forEach: " + x);
+                });
     }
 
     public static void printSpecies1(List<SeaCreature> seaCreatures) {
