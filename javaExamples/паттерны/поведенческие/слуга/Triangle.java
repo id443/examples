@@ -1,4 +1,4 @@
-package javaExamples.паттерны.слуга;
+package паттерны.поведенческие.слуга;
 
 public class Triangle implements Movable {
 	// Position of the geometric object on some canvas

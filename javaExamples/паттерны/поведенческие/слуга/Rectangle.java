@@ -1,6 +1,6 @@
-package javaExamples.паттерны.слуга;
+package паттерны.поведенческие.слуга;
 
-public class Ellipse implements Movable {
+public class Rectangle implements Movable {
 	// Position of the geometric object on some canvas
 	private Position p;
 

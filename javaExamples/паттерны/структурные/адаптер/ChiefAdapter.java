@@ -1,4 +1,4 @@
-package паттерны.адаптер;
+package паттерны.структурные.адаптер;
 
 public class ChiefAdapter extends Plumber implements Chief
 {

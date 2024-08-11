@@ -1,4 +1,4 @@
-package javaExamples.паттерны.посетитель;
+package паттерны.поведенческие.посетитель;
 
 class Point3d extends Point {
 	public Point3d ( double x, double y, double z ) {

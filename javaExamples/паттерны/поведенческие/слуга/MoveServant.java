@@ -1,4 +1,4 @@
-package javaExamples.паттерны.слуга;
+package паттерны.поведенческие.слуга;
 
 public class MoveServant {
 	// Method, which will move Movable implementing class to position where

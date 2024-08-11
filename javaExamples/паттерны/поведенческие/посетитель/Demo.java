@@ -1,4 +1,4 @@
-package javaExamples.паттерны.посетитель;
+package паттерны.поведенческие.посетитель;
 
 public class Demo {
     public static void main ( String [] args ) {

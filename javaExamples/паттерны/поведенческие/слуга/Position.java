@@ -1,4 +1,4 @@
-package javaExamples.паттерны.слуга;
+package паттерны.поведенческие.слуга;
 
 public class Position {
 	public int xPosition;

@@ -1,4 +1,4 @@
-package javaExamples.паттерны.посетитель;
+package паттерны.поведенческие.посетитель;
 
 class Euclid implements Visitor {
 	public void visit ( Point2d p ) {

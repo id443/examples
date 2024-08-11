@@ -1,4 +1,4 @@
-package javaExamples.паттерны.посетитель;
+package паттерны.поведенческие.посетитель;
 
 abstract class Point {
 	public abstract void accept ( Visitor v );
