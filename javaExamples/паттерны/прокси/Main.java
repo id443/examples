@@ -1,7 +1,7 @@
 package паттерны.прокси;
 
-import паттерны.заместитель.IMath;
-import паттерны.заместитель.MathProxy;
+import паттерны.структурные.заместитель.IMath;
+import паттерны.структурные.заместитель.MathProxy;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package паттерны.заместитель;
+package паттерны.структурные.заместитель;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package паттерны.декоратор;
+package паттерны.структурные.декоратор;
 
 class DecoratorSpace extends Decorator {
 	
