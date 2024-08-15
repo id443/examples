@@ -1,5 +1,5 @@
 class DemoBuilder {
-  public static void main(Args[]){
+  public static void main(String... args){
     NutritionFacts cocaCola = new NutritionFacts
     .Builder(240, 8)
     .calories(100)
